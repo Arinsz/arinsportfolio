@@ -18,24 +18,25 @@ function Navbar() {
     setNavActive(false); // Close the menu
   };
 
+  // Define handleResize as a named function
+  const handleResize = () => {
+    // Close menu if window width is greater than 1200px
+    if (window.innerWidth > 1200) {
+      setNavActive(false);
+    }
+  };
+
   // Handle window resize to close menu on smaller screens
   useEffect(() => {
-    const handleResize = () => {
-      // Close menu if window width is greater than 1200px
-      if (window.innerWidth > 1200) {
-        setNavActive(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize); // Attach the named function
 
     // Initial check on mount
-    handleResize();
+    handleResize(); // Call once to set initial state
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", handleResize); // Cleanup on component unmount
     };
-  }, []);
+  }, []); // Empty dependency array ensures this runs only on mount and unmount
 
   // Function to determine if we're on the main page
   const isMainPage = pathname === "/"; // Adjust this if your main page is different
