@@ -27,6 +27,10 @@ function Navbar() {
       }
     };
 
+    const handleVideoEnded = () => {
+      console.log("Video has ended."); // Optional: Log or handle video end here
+    };
+
     window.addEventListener("resize", handleResize);
 
     // Initial check on mount
@@ -51,9 +55,7 @@ function Navbar() {
           className="navbar-video"
           autoPlay
           muted
-          onEnded={() => {
-            console.log("Video has ended."); // Optional: Log or handle video end here
-          }}
+          onEnded={handleVideoEnded} // Use named function here
         />
       </div>
       <button
