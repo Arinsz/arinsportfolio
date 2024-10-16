@@ -140,7 +140,7 @@ h2 {
   font-weight: 600;
   line-height: 32px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 /* Portfolio, Testimonial & Contact Me */
 .sub--title {
@@ -373,6 +373,7 @@ h2 {
   align-items: center;
   gap: 40.6px;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 .about--section--img > img {
   width: 100%; /* Make the image take the full width of the container */
@@ -380,6 +381,8 @@ h2 {
   max-width: 100%; /* Allow the image to shrink to fit the container */
   max-height: 500px; /* Limit max height */
   max-width: 400px;
+  min-width: 200px;
+  min-height: 200px;
   margin-left: auto;
   border-radius: 15px;
   justify-content: center;
@@ -591,22 +594,28 @@ input[type="checkbox"] {
 /* Footer Starts */
 .footer--container {
   display: flex;
-  padding: 0.667px 70.333px;
-  flex-direction: column;
-  background: var(--bg-shade);
-  align-items: center;
-  align-self: stretch;
+  padding: 0.667px 70.333px; /* Padding for the footer */
+  flex-direction: column; /* Stack items vertically */
+  background: var(--bg-shade); /* Background color */
+  align-items: center; /* Center align items */
+  align-self: stretch; /* Allow stretching to fit the container */
+  overflow: hidden; /* Prevent any overflow from child elements */
 }
 
 .footer--link--container {
   display: flex;
-  justify-content: space-between; /* This keeps social icons on the right */
-  align-items: flex-start; /* Change from center to start */
-  width: 100%; /* Ensures it takes the full width */
-  margin-bottom: 16px; /* Add bottom margin to create space */
+  justify-content: space-between; /* Keep social icons on the right */
+  align-items: flex-start; /* Align items at the start */
+  width: 100%; /* Take the full width */
+  margin-bottom: 16px; /* Bottom margin for spacing */
 }
+
 .footer--link--container video {
-  margin-bottom: 8px; /* Adjust this value to move the video closer to icons */
+  margin-bottom: 0px; /* Space above the video */
+  max-width: 100%; /* Ensure the video does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Treat video as block to respect container width */
+  /* Remove padding: auto; since it's not a valid value for padding */
 }
 
 .footer--items {
@@ -622,48 +631,48 @@ input[type="checkbox"] {
   justify-content: center; /* Center the menu items */
   gap: 90.667px; /* Adjust gap as necessary */
   text-decoration: none;
-  flex-grow: 1; /* This allows the menu to grow and fill available space */
+  flex-grow: 1; /* Allow menu to grow and fill available space */
 }
 
 .footer--items > ul > li:hover {
-  cursor: pointer; /* Change the cursor to pointer on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .footer--social--icon {
-  display: flex; /* Ensure it's a flex container */
+  display: flex; /* Flex container for social icons */
   justify-content: flex-end; /* Align social icons to the right */
 }
 
 .footer--social--icon > ul {
-  list-style: none;
+  list-style: none; /* No list style for icons */
   display: flex;
   align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
-  text-decoration: none;
+  gap: 16px; /* Space between icons */
+  flex-shrink: 0; /* Prevent shrinking */
+  text-decoration: none; /* No underline for links */
 }
 
 /* The rest of your existing CSS remains unchanged */
 .divider {
-  margin: 0px 0 32px; /* Adjusted top margin for better spacing */
-  height: 1.333px;
-  width: 100%;
-  background: rgba(40, 41, 56, 0.55);
+  margin: 0px 0 20px; /* Margin for spacing */
+  height: 1.333px; /* Divider height */
+  width: 100%; /* Full width for divider */
+  background: rgba(40, 41, 56, 0.55); /* Divider color */
 }
+
 .footer--content--container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
+  justify-content: space-between; /* Space between content */
+  align-items: center; /* Align items in center */
+  align-self: stretch; /* Allow stretching */
 }
 
 .footer--content {
-  color: var(--black);
-  font-size: 18.667px;
-  font-weight: 400;
-  line-height: 28px;
+  color: var(--black); /* Text color */
+  font-size: 18.667px; /* Font size */
+  font-weight: 400; /* Font weight */
+  line-height: 28px; /* Line height */
 }
-
 /* Privacy Policy Page Starts */
 
 .PrivacyPolicy--Section {
@@ -718,7 +727,7 @@ input[type="checkbox"] {
 }
 
 .TermsOfService--section--button-link {
-  display: flexbox; /* Changed from flexbox to flex */
+  display: flexbox;
   align-items: center;
   justify-content: center;
   margin-top: 20px; /* Add margin to create space above the button */
@@ -1012,5 +1021,219 @@ input[type="checkbox"] {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
+@media (max-width: 500px) {
+  .about--section {
+    padding: 50px 20px; /* Minska padding för mobilskärmar */
+    grid-template-columns: 1fr; /* Endast en kolumn för mobilskärmar */
+  }
 
-/* Responsive Screens Ends*/
+  .about--section--img > img {
+    max-width: 100%; /* Gör bilden responsiv och ta upp hela bredden */
+    max-height: none; /* Ta bort maxhöjd för att låta bilden anpassa sig */
+    min-width: 100%; /* Gör bilden ta upp hela bredden */
+    min-height: auto; /* Ta bort minhöjd */
+    margin: 0 auto; /* Centrera bilden horisontellt */
+    box-shadow: none; /* Ta bort skugga för en renare look på mobil */
+  }
+  .hero--section {
+    flex-direction: column; /* Ställ in på kolumnlayout för mobilskärmar */
+    padding: 150px 20px; /* Minska padding för mobilskärmar */
+    gap: 16px; /* Justera gap mellan element */
+  }
+
+  .hero--section--content-box {
+    max-width: 100%; /* Gör innehållsboxen responsiv */
+    align-items: center; /* Centrera innehåll för mobil */
+  }
+
+  .hero--section--title {
+    font-size: 28px; /* Minska fontstorlek för titeln */
+    line-height: 36px; /* Justera radavstånd */
+  }
+
+  .hero--section-description {
+    font-size: 18px; /* Minska fontstorlek för beskrivning */
+    line-height: 28px; /* Justera radavstånd */
+  }
+
+  .hero--section--img {
+    max-width: 100%; /* Gör bilden responsiv */
+    justify-content: center; /* Centrera bilden horisontellt */
+  }
+
+  .hero--section--img > img {
+    max-height: 400px; /* Minska maxhöjd för mobilskärmar */
+  }
+
+  .hero--section--button-link {
+    padding: 0.75rem 1.5rem; /* Minska padding för knappen */
+    font-size: 1rem; /* Minska fontstorlek för knappen */
+  }
+
+  .PrivacyPolicy--Section {
+    margin-top: 20px;
+    padding: 10px; /* Minska padding för mobilskärmar */
+    height: auto; /* Låt höjden anpassa sig till innehållet */
+  }
+
+  .PrivacyPolicy-container h1 {
+    font-size: 24px; /* Minska fontstorlek för rubriken */
+    text-align: center; /* Centrera rubriken */
+  }
+
+  .PrivacyPolicy-container {
+    margin-top: 100px; /* Minska marginalen för att spara utrymme */
+  }
+
+  .PrivacyPolicy--section--button-link {
+    display: flexbox; /* Changed from flexbox to flex */
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Add margin to create space above the button */
+  }
+  .TermsOfService--Section {
+    margin-top: 20px; /* Consistent margin */
+    padding: 10px; /* Minska padding för mobilskärmar */
+    height: auto; /* Låt höjden anpassa sig till innehållet */
+  }
+
+  .TermsOfService-container h1 {
+    font-size: 24px; /* Minska fontstorlek för rubriken */
+    text-align: center; /* Centrera rubriken */
+  }
+
+  .TermsOfService-container {
+    margin-top: 100px; /* Minska marginalen för att spara utrymme */
+  }
+
+  .TermsOfService--section--button-link {
+    display: flexbox; /* Changed from flexbox to flex for proper alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px; /* Add margin to create space above the button */
+  }
+  .Cookies--Section {
+    margin-top: 20px; /* Consistent margin */
+    padding: 10px; /* Minska padding för mobilskärmar */
+    height: auto; /* Låt höjden anpassa sig till innehållet */
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+  }
+
+  .Cookies-container h1 {
+    font-size: 24px; /* Minska fontstorlek för rubriken */
+    text-align: center; /* Centrera rubriken */
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+
+  .Cookies-container {
+    margin-top: 100px; /* Maintain the margin for spacing */
+  }
+
+  .Cookies--section--button-link {
+    display: flexbox;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px;
+  }
+
+  .skills--section {
+    padding: 40px 20px; /* Reduce padding for mobile screens */
+  }
+
+  .skills--section--heading {
+    font-size: 28px; /* Smaller font size for mobile */
+    margin-left: 0; /* Remove margin for mobile */
+  }
+
+  .skills--section--container {
+    grid-template-columns: repeat(1, 1fr); /* One column for mobile */
+    gap: 20px; /* Adjust gap for mobile */
+  }
+
+  .skills--section--card {
+    padding: 16px; /* Smaller padding for cards on mobile */
+  }
+
+  .skills--section--title {
+    font-size: 24px; /* Smaller title font size */
+  }
+
+  .skills--section--description {
+    font-size: 16px; /* Smaller description font size */
+    line-height: 24px; /* Adjust line height */
+  }
+
+  .portfolio--section {
+    padding: 40px 20px; /* Reduce padding for mobile screens */
+    gap: 40px; /* Reduce gap between items */
+  }
+
+  .portfolio--section--container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+    gap: 20px; /* Adjust gap between cards */
+  }
+
+  .portfolio--section--card {
+    flex-basis: 100%; /* Cards take full width on mobile */
+    max-width: 100%; /* Ensure no overflow */
+  }
+
+  .portfolio--section--img {
+    height: 140px; /* Reduce image height for mobile */
+  }
+
+  .portfolio--section--card--content {
+    padding: 16px; /* Reduce padding for mobile */
+  }
+
+  .portfolio--section--title {
+    font-size: 24px; /* Smaller title font size */
+  }
+
+  .portfolio--link {
+    font-size: 16px; /* Smaller link font size */
+    padding-bottom: 8px; /* Adjust bottom padding */
+  }
+
+  .footer--container {
+    padding: 20px; /* Reduce padding for mobile */
+  }
+
+  .footer--link--container {
+    flex-direction: column; /* Stack link container vertically */
+    align-items: center; /* Center align items */
+    margin-bottom: 10px; /* Reduce bottom margin */
+  }
+
+  .footer--link--container video {
+    margin-bottom: 10px; /* Add some space below the video */
+  }
+
+  .footer--items {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .footer--items > ul {
+    gap: 20px; /* Adjust gap for mobile */
+  }
+
+  .footer--social--icon {
+    justify-content: center; /* Center social icons */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+
+  .footer--social--icon > ul {
+    gap: 10px; /* Reduce gap between icons */
+  }
+
+  .footer--content {
+    font-size: 16px; /* Reduce font size for mobile */
+    line-height: 24px; /* Adjust line height */
+  }
+}
