@@ -1,8 +1,16 @@
+import Image from "next/image";
+
 export default function AboutMe() {
   return (
     <section id="AboutMe" className="about--section">
       <div className="about--section--img">
-        <img src="./arin2.jpg" alt="About Me" />
+        <Image
+          src="/arin2.jpg"
+          alt="About Me"
+          width={500}
+          height={500}
+          priority // Optional: Prioritizes loading of this image for better LCP performance
+        />
       </div>
       <div className="hero--section--content--box about--section--box">
         <div className="hero--section--content">
