@@ -1,0 +1,98 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./product-chain-1.png",
+      "title": "Front-End",
+      "description": "I am still learning React, and this is my second React page. Visit my first page at https://gamespace-se.vercel.app/."
+    },
+    {
+      "id": "2",
+      "src": "./tag-1.png",
+      "title": "Back-End",
+      "description": "I'm learning SQL, MongoDB, and AWS RDS Database. I focus on full-stack development to create scalable and efficient applications."
+    },
+    {
+      "id": "3",
+      "src": "./feather-pen-2.png",
+      "title": "Javascript",
+      "description": "JavaScript is central to my development. Learning React has helped me improve both my JavaScript and front-end skills over time."
+    },
+    {
+      "id": "4",
+      "src": "./feather-pen-1.png",
+      "title": "AWS",
+      "description": "I've gained experience with AWS through my studies, including working with services like EC2 and RDS to manage cloud-based applications."
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./techstore.jpg",
+      "title": "ArinsTechStore",
+      "description": "Arins Tech Store is a Spring Boot application using AWS Cognito with a database installed on a EC2 instance to store information.",
+      "linkText": "View In Github",
+      "linkUrl": "https://github.com/Arinsz/cloudutveckling/tree/main"
+    },
+    {
+      "id": "2",
+      "src": "./dbh.jpg",
+      "title": "Database management",
+      "description": "A Spring Boot-based application that manages customers, employees, repairs, files, and invoices.",
+      "linkText": "View In Github",
+      "linkUrl": "https://github.com/Distansakademin/dbh-vt24-inlamning-Arinsz"
+    },
+    {
+      "id": "3",
+      "src": "./weather.jpg",
+      "title": "Spring-Weather-Api",
+      "description": "This project is a Spring Boot-based web application that manages information about countries, cities, and weather.",
+      "linkText": "View In Github",
+      "linkUrl": "https://github.com/Distansakademin/spring-weather-api-Arinsz"
+    },
+    {
+      "id": "4",
+      "src": "./gamespace.jpg",
+      "title": "GameSpace",
+      "description": "This project is my first website built with React. It uses an AWS RDS database to store product information.",
+      "linkText": "View In Github",
+      "linkUrl": "https://github.com/Arinsz/tailwind/tree/main"
+    },
+    {
+      "id": "5",
+      "src": "./recipebook.jpg",
+      "title": "Recipe Book",
+      "description": "This project is a digital Recipe Book application that uses TDD. Good for learning Test-Driven Development.  ",
+
+      "linkText": "View In Github",
+      "linkUrl": "https://github.com/Distansakademin/unit-testing-Arinsz"
+    }
+  ],
+
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./avatar-image.png",
+      "description": "5/5!",
+      "author_name": "Mike",
+      "author_designation": "Web developer"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./avatar-image-1.png",
+      "description": "Nice!",
+      "author_name": "Luis",
+      "author_designation": "Backend Developer"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./avatar-image-2.png",
+      "description": "Good page!",
+      "author_name": "Adrian",
+      "author_designation": "Cloud Developer"
+    }
+  ]
+}
