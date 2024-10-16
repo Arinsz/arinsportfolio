@@ -1,13 +1,15 @@
 "use client";
 
 import { Link } from "react-scroll";
+import Image from "next/image"; // Import Next.js Image component
 
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content-box">
         <div className="hero--section--content">
-          <p className="section--title">Hey, I'm Arin</p>
+          {/* Escape the apostrophe here */}
+          <p className="section--title">Hey, I&apos;m Arin</p>
           <h1 className="hero--section--title">
             <span className="hero--section-title--color">
               Student at Jensens Yrkeshögskola -
@@ -39,7 +41,14 @@ export default function HeroSection() {
         </Link>
       </div>
       <div className="hero--section--img">
-        <img src="/arin.jpg" alt="Hero Section" />
+        {/* Use Next.js Image component for optimization */}
+        <Image
+          src="/arin.jpg"
+          alt="Hero Section"
+          width={500}
+          height={500} // You can adjust these values
+          priority // Optional, to prioritize image loading
+        />
       </div>
     </section>
   );
