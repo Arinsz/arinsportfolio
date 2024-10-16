@@ -28,11 +28,13 @@ function Navbar() {
 
   // Handle window resize to close menu on smaller screens
   useEffect(() => {
-    window.addEventListener("resize", handleResize); // Attach the named function
+    // Attach the named function
+    window.addEventListener("resize", handleResize);
 
     // Initial check on mount
     handleResize(); // Call once to set initial state
 
+    // Cleanup function to remove the listener
     return () => {
       window.removeEventListener("resize", handleResize); // Cleanup on component unmount
     };
