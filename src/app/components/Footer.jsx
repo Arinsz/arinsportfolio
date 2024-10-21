@@ -131,6 +131,9 @@ function Footer() {
             <li>
               <Link href="/pages/cookies">Cookies</Link>
             </li>
+            <li>
+              <Link href="/pages/indexedDB">IndexedDB</Link>
+            </li>
           </ul>
         </div>
       </div>
