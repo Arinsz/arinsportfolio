@@ -54,7 +54,7 @@
       "id": "4",
       "src": "./gamespace.jpg",
       "title": "GameSpace",
-      "description": "This project is my first website built with React. It uses an AWS RDS database to store product information.",
+      "description": "https://gamespace-se.vercel.app This project is my first website built with React. It uses an AWS RDS database to store product information.",
       "linkText": "View In Github",
       "linkUrl": "https://github.com/Arinsz/tailwind/tree/main"
     },
