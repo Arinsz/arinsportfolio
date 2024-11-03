@@ -5,7 +5,7 @@ import { Link } from "react-scroll"; // Ensure you import Link from the appropri
 function Footer() {
   return (
     <div>
-      <hr className="my-0 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-900" />
+      <hr class="my-0 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-900" />
       <footer className="footer--container">
         <div className="footer--button-container">
           <Link
@@ -23,7 +23,6 @@ function Footer() {
           <div className="footer--titles">
             <div className="footer--title about-us-title">
               <div className="about-us-container">
-                {/* Flyttade knappen hit */}
                 <span style={{ fontWeight: "bold", fontSize: "18px" }}>
                   Om oss
                 </span>{" "}
@@ -36,7 +35,6 @@ function Footer() {
                 </p>
               </div>
             </div>
-            {/* Resterande kod oförändrad */}
             <div className="footer--title services-title">
               <div className="services-container">
                 <span style={{ fontWeight: "bold", fontSize: "18px" }}>
