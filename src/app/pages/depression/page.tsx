@@ -48,8 +48,8 @@ export default function DepressionHeroSection() {
             sorg, trötthet, skuld, värdelöshet och ofta en oförmåga att känna
             glädje. Det kan också leda till fysiska symtom som sömnproblem,
             förändringar i aptit och minskad energi. Många med depression
-            beskriver att de känner sig "instängda" i ett mörkt hål, där inget
-            längre känns meningsfullt.
+            beskriver att de känner sig &quot;instängda&quot; i ett mörkt hål,
+            där inget längre känns meningsfullt.
           </p>
 
           <p className="depression-section-title3">
@@ -85,7 +85,7 @@ export default function DepressionHeroSection() {
             arbetar tillsammans med dig för att hjälpa dig förstå vad som ligger
             bakom din depression. Genom att behandlingen skräddarsys efter dina
             behov kan vi hjälpa dig att återfå kontrollen över ditt liv, stärka
-            ditt emotionella välbefinnande och förbättra din livskvalitet.{" "}
+            ditt emotionella välbefinnande och förbättra din livskvalitet.
           </p>
 
           <p className="depression-hero-section-description4">
@@ -94,6 +94,7 @@ export default function DepressionHeroSection() {
             depressionen vid liv. Målet är att hjälpa dig hitta vägar tillbaka
             till ett mer meningsfullt och tillfredsställande liv.
           </p>
+
           <p className="depression-section-title5">
             Hur vi kan hjälpa dig vidare
           </p>

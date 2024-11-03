@@ -1,13 +1,8 @@
 "use client"; // Ensure this is a client component
 
-import { Link as ScrollLink } from "react-scroll"; // For smooth scrolling
-import { usePathname } from "next/navigation"; // To check the current pathname
 import Link from "next/link"; // For Next.js navigation
 
 function Navbar() {
-  const pathname = usePathname(); // Get the current pathname
-  const isMainPage = pathname === "/"; // Check if on the main page
-
   return (
     <nav className="navbar">
       <div className="navbar--container">
