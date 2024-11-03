@@ -198,3 +198,79 @@
 .dropdown:hover .submenu {
   display: block; /* Show submenu on hover */
 }
+
+/* Responsive Styles for Larger Screens (1200px and up) */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 20px 80px; /* Mer padding på större skärmar */
+  }
+
+  .navbar--container {
+    flex-direction: row; /* Justera till horisontell layout */
+    align-items: center; /* Centrera vertikalt */
+  }
+
+  .navbar--title {
+    font-size: 28px; /* Större titelstorlek för bredare skärmar */
+    margin: 0 20px; /* Ökat horisontellt mellanrum */
+  }
+
+  .navbar--items > ul {
+    gap: 30px; /* Ökat avstånd mellan menyobjekt */
+  }
+
+  .navbar--content {
+    font-size: 18px; /* Ökad textstorlek för bättre läsbarhet */
+  }
+
+  .navbar--contact {
+    font-size: 18px; /* Justera kontaktknappens textstorlek */
+  }
+
+  .submenu {
+    min-width: 200px; /* Ökad bredd för större skärmar */
+    padding: 10px 0; /* Mer padding */
+  }
+
+  .submenu--content {
+    font-size: 16px; /* Större textstorlek för bättre läsbarhet */
+  }
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 320px) {
+  .navbar {
+    padding: 20px 80px; /* Mer padding på större skärmar */
+  }
+
+  .navbar--container {
+    flex-direction: row; /* Justera till horisontell layout */
+    align-items: center; /* Centrera vertikalt */
+  }
+
+  .navbar--title {
+    font-size: 10px; /* Större titelstorlek för bredare skärmar */
+    margin: 0 20px; /* Ökat horisontellt mellanrum */
+  }
+
+  .navbar--items > ul {
+    gap: 10px; /* Ökat avstånd mellan menyobjekt */
+  }
+
+  .navbar--content {
+    font-size: 5px; /* Ökad textstorlek för bättre läsbarhet */
+  }
+
+  .navbar--contact {
+    font-size: 18px; /* Justera kontaktknappens textstorlek */
+  }
+
+  .submenu {
+    min-width: 200px; /* Ökad bredd för större skärmar */
+    padding: 5px 0; /* Mer padding */
+  }
+
+  .submenu--content {
+    font-size: 8px; /* Större textstorlek för bättre läsbarhet */
+  }
+}
