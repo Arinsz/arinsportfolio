@@ -1,5 +1,4 @@
 /* Hero Section Style */
-/* Hero Section Style */
 .hero--section {
   display: flex;
   flex-direction: column; /* Ensure items stack vertically */
@@ -15,7 +14,7 @@
   align-items: center; /* Center items in the content box */
   gap: 32px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* Maximum width for larger screens */
   flex: 1;
 }
 
@@ -26,14 +25,15 @@
   width: 100%; /* Full width */
 }
 
-.hero--section--title {
+.section--title {
   color: var(--heading-color);
-  font-size: 40.667px;
+  font-size: 27.667px; /* Default font size */
   font-weight: 700;
   line-height: 1.2; /* Adjust line-height for better spacing */
   text-align: center; /* Center text */
   margin: 0; /* Remove margin to avoid misalignment */
   align-self: center; /* Center the title */
+  padding-bottom: 50px;
 }
 
 .hero--section-title--color {
@@ -42,7 +42,7 @@
 
 .hero--section-description {
   color: var(--darkblue);
-  font-size: 24px; /* Font size */
+  font-size: 22px; /* Default font size */
   font-weight: 400; /* Font weight */
   line-height: 36px; /* Line height */
   width: 100%; /* Full width */
@@ -50,6 +50,7 @@
   margin: 0 auto; /* Center */
   text-align: justify; /* Justify text */
   padding: 0 10px; /* Reduce padding for width */
+  padding-bottom: 15px;
 }
 
 .hero--section--img {
@@ -81,4 +82,90 @@
   transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-/* Hero Section Style Ends */
+/* Media Queries for Responsive Design */
+
+/* Styles for 1200px and below */
+@media (max-width: 1200px) {
+  .hero--section {
+    padding: 150px 30px; /* Adjust padding for medium screens */
+  }
+
+  .section--title {
+    font-size: 20px; /* Adjust title font size */
+    padding-bottom: 30px;
+  }
+
+  .hero--section-description {
+    font-size: 18px; /* Adjust description font size */
+    line-height: 30px; /* Adjust line height */
+    padding-bottom: 20px;
+  }
+
+  .hero--section--img {
+    max-width: 100%; /* Adjust image width */
+    padding: 30px; /* Adjust padding */
+  }
+}
+
+/* Styles for 768px and below */
+@media (max-width: 768px) {
+  .hero--section {
+    padding: 100px 20px; /* Less padding for smaller screens */
+  }
+
+  .section--title {
+    font-size: 20px; /* Adjust title font size */
+    padding-bottom: 30px;
+  }
+
+  .hero--section-description {
+    font-size: 15px; /* Adjust description font size */
+    line-height: 28px; /* Adjust line height */
+  }
+
+  .hero--section--img {
+    max-width: 90%; /* Adjust image width for small screens */
+    padding: 40px; /* Adjust padding */
+  }
+
+  .hero--section--button-link {
+    display: block; /* Change to block to make it fill the width */
+    padding: 0.5rem 0.5rem; /* Use relative units for padding */
+    font-size: 1rem; /* Use relative units for font size */
+    text-decoration: none; /* Remove underline */
+    box-sizing: border-box; /* Include padding in width */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded corners for button look */
+    background-color: white; /* Button color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+}
+
+/* Styles for 500px and below */
+@media (max-width: 500px) {
+  .hero--section {
+    padding: 70px 10px; /* Minimal padding for very small screens */
+  }
+
+  .section--title {
+    font-size: 15px; /* Smaller title font size */
+    padding-bottom: 30px;
+  }
+
+  .hero--section-description {
+    font-size: 15px; /* Smaller description font size */
+    line-height: 22px; /* Adjust line height */
+    padding: 0 5px; /* Reduce padding */
+  }
+
+  .hero--section--img {
+    max-width: 100%; /* Image takes full width */
+    padding: 40px; /* Reduce padding */
+    padding-top: 100px;
+  }
+
+  .hero--section--button-link {
+    padding: 0.5rem; /* Smaller padding for button */
+    font-size: 0.9rem; /* Smaller font size for button */
+  }
+}

@@ -22,9 +22,7 @@ export default function HeroSection() {
             Psykologer i Stockholm, Göteborg, Malmö, Uppsala, Västerås,
             Norrköping & Härnösand
           </p>
-          <h1 className="hero--section--title">
-            <span className="hero--section-title--color"></span> <br />
-          </h1>
+
           <p className="hero--section-description">
             Sveapsykologerna består av legitimerade psykologer och legitimerade
             psykoterapeuter som erbjuder terapi i Stockholm, Göteborg och Malmö
