@@ -6,26 +6,37 @@ import Image from "next/image"; // Import Next.js Image component
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
+      <div className="hero--section--img">
+        {/* Use Next.js Image component for optimization */}
+        <Image
+          src="/heroSection.jpg"
+          alt="Hero Section"
+          width={500}
+          height={500} // You can adjust these values
+          priority // Optional, to prioritize image loading
+        />
+      </div>
       <div className="hero--section--content-box">
         <div className="hero--section--content">
-          {/* Escape the apostrophe here */}
-          <p className="section--title">Hey, I&apos;m Arin</p>
+          <p className="section--title">
+            Psykologer i Stockholm, Göteborg, Malmö, Uppsala, Västerås,
+            Norrköping & Härnösand
+          </p>
           <h1 className="hero--section--title">
-            <span className="hero--section-title--color">
-              Student at Jensens Yrkeshögskola -
-            </span>{" "}
-            <br />
-            Cloud Developer
+            <span className="hero--section-title--color"></span> <br />
           </h1>
           <p className="hero--section-description">
-            I started by ordering computer parts and building computers when I
-            was young, and I found it very exciting to learn all about how
-            computers are built and which hardware components work best
-            together.
-            <br /> Since then, my interest in hardware, software, networking,
-            and gaming within IT has grown. I have decided that I want to work
-            in IT because that is where my interest and curiosity are the
-            greatest.
+            Sveapsykologerna består av legitimerade psykologer och legitimerade
+            psykoterapeuter som erbjuder terapi i Stockholm, Göteborg och Malmö
+            samt neuropsykiatriska utredningar i Stockholm, Göteborg, Malmö,
+            Uppsala, Västerås, Norrköping & Härnösand för fysiska besök. Vi
+            erbjuder även terapi och neuropsykiatriska utredningar via
+            videosamtal och då kan man befinna sig vart som helst i landet. Vi
+            erbjuder terapi samt neuropsykiatriska utredningar under dagtid,
+            kvällstid och helger på mottagningar, via video och telefon. Vi
+            arbetar med individuell terapi, coaching, par- och familjeterapi,
+            neuropsykiatriska utredningar – både mot privatpersoner och företag
+            – samt tillhandahåller föreläsningar.
           </p>
         </div>
         {/* Button should be directly in the parent container */}
@@ -37,18 +48,8 @@ export default function HeroSection() {
           duration={500}
           to="Contact"
         >
-          Get in touch
+          BOKA GRATIS KONSULTATION
         </Link>
-      </div>
-      <div className="hero--section--img">
-        {/* Use Next.js Image component for optimization */}
-        <Image
-          src="/arin.jpg"
-          alt="Hero Section"
-          width={500}
-          height={500} // You can adjust these values
-          priority // Optional, to prioritize image loading
-        />
       </div>
     </section>
   );

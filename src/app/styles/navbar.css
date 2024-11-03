@@ -1,0 +1,172 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px; /* Adjust padding for desktop */
+  background: var(--white);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Navbar Container Styles */
+.navbar--container {
+  display: flex;
+  flex-direction: column; /* Default for larger screens */
+  align-items: center; /* Center-align all items */
+}
+
+/* Title Styles */
+.navbar--title {
+  color: var(--darkblue);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.navbar--link {
+  text-decoration: none; /* Remove underline from link */
+}
+/* Navbar Items Styles */
+.navbar--items {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.navbar--items > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the contact button is always on the right */
+.navbar--contact {
+  margin-left: auto;
+}
+
+/* Navbar Content */
+.navbar--content {
+  color: var(--darkblue);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px; /* Less padding on smaller screens */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .navbar--container {
+    flex-direction: column; /* Ensure items stack vertically */
+    align-items: center; /* Center items */
+  }
+
+  .navbar--items > ul {
+    gap: 12px; /* Reduce gap */
+    padding: 0; /* Remove padding */
+  }
+
+  .navbar--contact {
+    margin-left: 0; /* Reset margin for mobile */
+    margin-top: 10px; /* Add spacing above contact button */
+  }
+
+  .navbar--content {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}
+
+/* Submenu Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none; /* Hide submenu by default */
+  position: absolute;
+  top: 100%; /* Position below the main menu item */
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 180px; /* Minimum width of submenu */
+  z-index: 1000;
+}
+
+.submenu li {
+  padding: 5px 20px;
+}
+
+.submenu--content {
+  color: var(--darkblue);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.submenu--content:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.dropdown:hover .submenu {
+  display: block; /* Show submenu on hover */
+}
+@media (max-width: 600px) {
+  .navbar--items > ul {
+    gap: 6px; /* Reduce gap even more */
+  }
+}
+
+/* Submenu Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none; /* Hide submenu by default */
+  position: absolute;
+  top: 100%; /* Position below the main menu item */
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 180px; /* Minimum width of submenu */
+  z-index: 1000;
+}
+
+.submenu li {
+  padding: 5px 20px;
+}
+
+.submenu--content {
+  color: var(--darkblue);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.submenu--content:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.dropdown:hover .submenu {
+  display: block; /* Show submenu on hover */
+}

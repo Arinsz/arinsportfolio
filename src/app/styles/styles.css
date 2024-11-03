@@ -28,7 +28,7 @@ p {
 .btn {
   font-family: "Roboto";
   display: inline-block;
-  padding: 14px 32px;
+  padding: 12px 32px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -48,22 +48,22 @@ p {
   -o-transition: background-color 0.5s;
 }
 .btn-outline-primary {
-  color: var(--primary);
+  color: var(--black);
   background-color: var(--white);
-  border: 1px solid var(--primary);
+  border: 1px solid black;
 }
 .btn-outline-primary:hover {
   color: var(--white);
-  background-color: var(--primary);
+  background-color: gray;
 }
 .btn-primary {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary);
-  border: 1px solid var(--primary);
+  border: 1px solid var(--black);
 }
 .btn-primary:hover {
-  color: var(--primary);
-  background-color: var(--white);
+  color: var(--bg-shade);
+  background-color: grey;
 }
 .btn-github {
   color: var(--white);
@@ -151,151 +151,12 @@ h2 {
 }
 /* Section Titles Ends */
 
-/* Navbar Style Start */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 85.333px;
-  background: var(--white);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000; /* Ensures the navbar stays on top */
-}
-
-.navbar::after {
-  content: "";
-  position: absolute;
-  bottom: -2px; /* Slightly below the navbar */
-  left: 0;
-  right: 0;
-  height: 0px;
-  background: linear-gradient(
-    to left,
-    var(--primary),
-    var(--github)
-  ); /* Apply gradient */
-  opacity: 0.8; /* Adjust the transparency as needed */
-}
-
-.navbar--items > ul {
-  list-style: none;
-  display: flex;
-  align-items: center; /* Center align items vertically */
-  gap: 100.667px;
-  text-decoration: none;
-}
-
-.navbar--items ul > li > a {
-  text-decoration: none;
-}
-
-/* Navbar Content */
-.navbar--content {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  cursor: pointer;
-}
-
-.navbar--active-content {
-  color: var(--primary);
-}
-
-/* Updated Navbar Video Styles */
-.navbar-video {
-  width: 150px; /* Set width */
-  height: auto; /* Keep aspect ratio */
-  margin: 0px 0; /* Adjust margin to better align */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  object-fit: cover; /* Crop the video to fit inside the box without distortion */
-  transition: all 0.2s ease; /* Smooth transitions on hover/resize */
-}
-
-/* Navbar Styler Ends */
-
 .indexdb {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   height: 100vh;
 }
-/* Hero Section Style */
-.hero--section {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 200.333px 250.333px 133.333px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  background-color: var(--bg-shade);
-}
-.hero--section--content-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  width: 100%;
-  max-width: 800px;
-  flex: 1;
-}
-.hero--section--content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 21.333px;
-}
-.hero--section--content--box > button {
-  margin-top: 21.333px;
-}
-.hero--section--title {
-  color: var(--heading-color);
-  font-size: 40.667px;
-  font-weight: 700;
-  line-height: 60px;
-  align-self: stretch;
-}
-.hero--section--title--color {
-  color: var(--primary);
-}
-.hero--section-description {
-  color: var(--darkblue);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
-}
-.hero--section--img {
-  display: flex;
-  max-width: 500px;
-  min-width: 300px;
-}
-.hero--section--img > img {
-  width: 100%;
-  height: 100%;
-  max-height: 600px;
-  object-fit: cover;
-  border-radius: 15px;
-
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.hero--section--button-link {
-  display: block; /* Change to block to make it fill the width */
-  padding: 1rem 2rem; /* Use relative units for padding */
-  font-size: 1.25rem; /* Use relative units for font size */
-  text-decoration: none; /* Remove underline */
-  /box-sizing: border-box; /* Include padding in width */
-  text-align: center; /* Center the text */
-  border-radius: 5px; /* Rounded corners for button look */
-  background-color: var(--primary); /* Button color */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-/* Hero Section Style Ends */
 
 /* Skills Section Style */
 .skills--section {
@@ -598,88 +459,6 @@ input[type="checkbox"] {
 
 /* Contact End */
 
-/* Footer Starts */
-.footer--container {
-  display: flex;
-  padding: 0.667px 70.333px; /* Padding for the footer */
-  flex-direction: column; /* Stack items vertically */
-  background: var(--bg-shade); /* Background color */
-  align-items: center; /* Center align items */
-  align-self: stretch; /* Allow stretching to fit the container */
-  overflow: hidden; /* Prevent any overflow from child elements */
-}
-
-.footer--link--container {
-  display: flex;
-  justify-content: space-between; /* Keep social icons on the right */
-  align-items: flex-start; /* Align items at the start */
-  width: 100%; /* Take the full width */
-  margin-bottom: 16px; /* Bottom margin for spacing */
-}
-
-.footer--link--container video {
-  margin-bottom: 0px; /* Space above the video */
-  max-width: 100%; /* Ensure the video does not exceed the container width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Treat video as block to respect container width */
-  /* Remove padding: auto; since it's not a valid value for padding */
-}
-
-.footer--items {
-  flex: 1; /* Allow this to take available space */
-  display: flex;
-  justify-content: center; /* Center the menu items */
-}
-
-.footer--items > ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center the menu items */
-  gap: 90.667px; /* Adjust gap as necessary */
-  text-decoration: none;
-  flex-grow: 1; /* Allow menu to grow and fill available space */
-}
-
-.footer--items > ul > li:hover {
-  cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-.footer--social--icon {
-  display: flex; /* Flex container for social icons */
-  justify-content: flex-end; /* Align social icons to the right */
-}
-
-.footer--social--icon > ul {
-  list-style: none; /* No list style for icons */
-  display: flex;
-  align-items: center;
-  gap: 16px; /* Space between icons */
-  flex-shrink: 0; /* Prevent shrinking */
-  text-decoration: none; /* No underline for links */
-}
-
-/* The rest of your existing CSS remains unchanged */
-.divider {
-  margin: 0px 0 20px; /* Margin for spacing */
-  height: 1.333px; /* Divider height */
-  width: 100%; /* Full width for divider */
-  background: rgba(40, 41, 56, 0.55); /* Divider color */
-}
-
-.footer--content--container {
-  display: flex;
-  justify-content: space-between; /* Space between content */
-  align-items: center; /* Align items in center */
-  align-self: stretch; /* Allow stretching */
-}
-
-.footer--content {
-  color: var(--black); /* Text color */
-  font-size: 18.667px; /* Font size */
-  font-weight: 400; /* Font weight */
-  line-height: 28px; /* Line height */
-}
 /* Privacy Policy Page Starts */
 
 .PrivacyPolicy--Section {
@@ -753,37 +532,6 @@ input[type="checkbox"] {
     line-height: 40px;
   }
 }
-
-/* Cookies Page Starts */
-
-.Cookies--Section {
-  background-color: #f0f0f0; /* Light gray background */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margins */
-  padding: 20px; /* Padding for content */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Center the content vertically */
-}
-
-.Cookies-container h1 {
-  margin-bottom: 20px; /* Adjust the value as needed */
-}
-
-.Cookies-container {
-  padding: auto;
-  margin-top: 10px;
-}
-
-.Cookies--section--button-link {
-  display: flexbox; /* Corrected from flexbox to flex */
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px; /* Add margin to create space above the button */
-}
-
-/* Cookies Page Ends */
 
 @media only screen and (max-width: 1600px) {
   .skills--section--heading {
@@ -956,95 +704,6 @@ input[type="checkbox"] {
 }
 
 /* Hamburger menu  */
-
-.nav__hamburger {
-  display: none;
-  width: 2rem;
-  height: 2rem;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-}
-
-.nav__hamburger__line {
-  display: block;
-  height: 0.188rem;
-  width: 100%;
-  background-color: #000000;
-  border-radius: 0.625rem;
-  transition: all ease-in-out 0.2s;
-}
-
-@media screen and (max-width: 1200px) {
-  .nav__hamburger {
-    display: flex;
-    z-index: 200;
-  }
-  .navbar--items {
-    display: flex;
-  }
-  .navbar--items {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bg-shade);
-    top: -20rem;
-    left: 0;
-    width: 100%;
-    transition: all ease-in-out 0.4s;
-  }
-  .navbar--items ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0rem 0 0rem;
-    z-index: -0;
-  }
-  .navbar {
-    padding: 0 20px; /* Reduce padding for mobile */
-    flex-direction: column; /* Stack items vertically if necessary */
-    align-items: center; /* Center items for mobile */
-    justify-content: center; /* Center contents vertically */
-  }
-
-  .navbar--items > ul {
-    flex-direction: column; /* Stack navbar items for smaller screens */
-    gap: 20px; /* Reduced gap for mobile */
-    align-items: center; /* Center navbar items */
-  }
-
-  .navbar-video {
-    width: 120px; /* Smaller width for mobile */
-    margin: 10px 0; /* Optional: add margin to separate from navbar items */
-  }
-  .navbar--items ul li {
-    text-align: center;
-  }
-  .navbar--items ul li a {
-    padding: 0.5rem;
-  }
-  .navbar--items {
-    display: none; /* Start hidden */
-  }
-  .navbar--items.active {
-    display: flex;
-    top: 10px;
-  }
-  .nav__hamburger.active :nth-child(1) {
-    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
-  }
-
-  .nav__hamburger.active :nth-child(2) {
-    opacity: 0;
-  }
-
-  .nav__hamburger.active :nth-child(3) {
-    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
-  }
-}
 
 @media (max-width: 500px) {
   .about--section {

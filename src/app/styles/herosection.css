@@ -1,0 +1,84 @@
+/* Hero Section Style */
+/* Hero Section Style */
+.hero--section {
+  display: flex;
+  flex-direction: column; /* Ensure items stack vertically */
+  align-items: center; /* Center items */
+  padding: 200px 50px; /* Adjust padding to reduce space around */
+  gap: 16px; /* Adjust spacing */
+  background-color: var(--bg-shade);
+}
+
+.hero--section--content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in the content box */
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+  flex: 1;
+}
+
+.hero--section--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in the column */
+  width: 100%; /* Full width */
+}
+
+.hero--section--title {
+  color: var(--heading-color);
+  font-size: 40.667px;
+  font-weight: 700;
+  line-height: 1.2; /* Adjust line-height for better spacing */
+  text-align: center; /* Center text */
+  margin: 0; /* Remove margin to avoid misalignment */
+  align-self: center; /* Center the title */
+}
+
+.hero--section-title--color {
+  color: var(--primary);
+}
+
+.hero--section-description {
+  color: var(--darkblue);
+  font-size: 24px; /* Font size */
+  font-weight: 400; /* Font weight */
+  line-height: 36px; /* Line height */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Set max-width for a wider area */
+  margin: 0 auto; /* Center */
+  text-align: justify; /* Justify text */
+  padding: 0 10px; /* Reduce padding for width */
+}
+
+.hero--section--img {
+  display: flex;
+  justify-content: center; /* Center the image */
+  max-width: 80%; /* Increase the maximum width */
+  min-width: 400px; /* Increase the minimum width */
+  padding: 50px 80px; /* Increase padding for more space around the image */
+}
+
+.hero--section--img > img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 700px; /* Increase the maximum height */
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero--section--button-link {
+  display: block; /* Change to block to make it fill the width */
+  padding: 1rem 1rem; /* Use relative units for padding */
+  font-size: 1rem; /* Use relative units for font size */
+  text-decoration: none; /* Remove underline */
+  box-sizing: border-box; /* Include padding in width */
+  text-align: center; /* Center the text */
+  border-radius: 5px; /* Rounded corners for button look */
+  background-color: white; /* Button color */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hero Section Style Ends */

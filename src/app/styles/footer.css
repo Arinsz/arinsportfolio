@@ -1,0 +1,128 @@
+/* Container for About Us */
+.about-us-container {
+  margin-bottom: 40px; /* Space below the About Us section */
+  margin-left: 10%;
+}
+
+/* Container for Services */
+.services-container {
+  margin-bottom: 40px; /* Space below the Services section */
+}
+
+/* Container for Contact */
+.contact-container {
+  margin-bottom: 40px; /* Space below the Contact section */
+  margin-right: 10%;
+}
+
+/* Titles Container */
+.footer--titles {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Distribute space evenly */
+  gap: 40px; /* Add space between each section */
+  width: 100%; /* Ensure it takes full width */
+  max-width: 1200px; /* Max width for larger screens */
+  margin: auto; /* Center the content */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Each Title Style */
+.footer--title {
+  flex: 1; /* Allow titles to take equal space */
+  text-align: left; /* Left-align content within each title */
+  min-width: 200px; /* Minimum width to avoid compression */
+  margin: 20px 0; /* Space above and below titles */
+}
+
+/* Ensure headers have proper spacing */
+.about-us-header,
+.services-header,
+.contact-header {
+  margin-bottom: 15px; /* Margin below headers */
+}
+
+.services-container {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  margin-bottom: 40px; /* Space below the Services section */
+  margin-left: 20%; /* Left margin for larger screens */
+}
+
+.footer--button-container {
+  text-align: center; /* Center the button within the container */
+  margin: 20px 0; /* Space above and below the button */
+}
+
+.footer--button {
+  display: inline-block; /* Make the button behave like a block element */
+  padding: 10px 20px; /* Add padding inside the button */
+  font-size: 16px; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #fff; /* Text color */
+  background-color: #007bff; /* Background color (blue) */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+.footer--button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social Icons Container */
+.footer--social--icon {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center social icons on all screens */
+  margin-top: 20px; /* Optional: Space above the social icons */
+}
+
+.footer--social--icon ul {
+  display: flex; /* Use flexbox for the list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullet points */
+}
+
+.footer--social--icon li {
+  margin-left: 15px; /* Space between each icon */
+}
+
+.footer--social--icon a {
+  display: inline-block; /* Make links block elements */
+  width: 24px; /* Width for the SVG icons */
+  height: 24px; /* Height for the SVG icons */
+}
+@media (max-width: 768px) {
+  /* Titles Container */
+  .footer--titles {
+    flex-direction: column; /* Stack titles vertically on small screens */
+    align-items: center; /* Center titles */
+    gap: 0px; /* Add space between titles */
+  }
+
+  /* Each Title Style */
+  .footer--title {
+    min-width: 100%; /* Allow titles to take full width */
+    text-align: center; /* Center align text */
+  }
+
+  /* Adjust Margins for About Us and Contact */
+  .about-us-container,
+  .contact-container {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-right: 0; /* Remove right margin on smaller screens */
+    text-align: center; /* Center align text for these sections */
+  }
+
+  .services-container {
+    display: flex; /* Ensure it remains a flex container */
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 40px; /* Space below the Services section */
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+  .footer--link.service-link {
+    margin-bottom: 10px; /* Space below each service link */
+  }
+}
