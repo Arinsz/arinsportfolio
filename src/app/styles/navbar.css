@@ -23,9 +23,10 @@
 /* Title Styles */
 .navbar--title {
   color: var(--darkblue);
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 0 10px; /* Reduce the horizontal margin */
+  margin-left: -10px; /* Move the title slightly to the left */
   text-decoration: none;
 }
 
@@ -35,9 +36,9 @@
 /* Navbar Items Styles */
 .navbar--items {
   display: flex;
-  justify-content: center;
-  flex: 1;
-  margin-left: 10px;
+  justify-content: center; /* Center items within this container */
+  flex: 1; /* Allow this to grow and take available space */
+  margin-left: 20px; /* Space between title and items */
 }
 
 .navbar--items > ul {
@@ -76,7 +77,7 @@
   }
 
   .navbar--items > ul {
-    gap: 12px; /* Reduce gap */
+    gap: 17px; /* Reduce gap */
     padding: 0; /* Remove padding */
   }
 
@@ -87,6 +88,14 @@
 
   .navbar--content {
     font-size: 12px; /* Smaller font size for mobile */
+  }
+  .navbar--title {
+    color: var(--darkblue);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px; /* Reduce the horizontal margin */
+    margin-left: -5px; /* Move the title slightly to the left */
+    text-decoration: none;
   }
 }
 
@@ -129,7 +138,7 @@
 }
 @media (max-width: 600px) {
   .navbar--items > ul {
-    gap: 6px; /* Reduce gap even more */
+    gap: 8px; /* Reduce gap even more */
   }
 }
 
@@ -146,9 +155,11 @@
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   list-style: none;
-  padding: 10px 0;
-  margin: 0;
-  min-width: 180px; /* Minimum width of submenu */
+  padding: 5px 0;
+  margin: auto;
+  width: 50%; /* Set the submenu to be 50% of the parent width */
+  min-width: 150px; /* Optional: Set a minimum width */
+  max-width: 300px; /* Optional: Set a maximum width */
   z-index: 1000;
 }
 

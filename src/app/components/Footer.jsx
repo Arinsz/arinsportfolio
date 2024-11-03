@@ -5,11 +5,11 @@ import { Link } from "react-scroll"; // Ensure you import Link from the appropri
 function Footer() {
   return (
     <div>
-      <hr className="my-12 h-px bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-100" />
+      <hr className="my-0 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-900" />
       <footer className="footer--container">
         <div className="footer--button-container">
           <Link
-            className="footer--button" // Adjusted to use footer--button class
+            className="btn btn-primary footer--section--button-link"
             spy={true}
             smooth={true}
             offset={-70}
@@ -23,7 +23,10 @@ function Footer() {
           <div className="footer--titles">
             <div className="footer--title about-us-title">
               <div className="about-us-container">
-                <h4 className="about-us-header">About Us</h4>
+                {/* Flyttade knappen hit */}
+                <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                  Om oss
+                </span>{" "}
                 <p className="about-us-description">
                   Sveapsykologerna är en grupp anslutna legitimerade psykologer
                   och psykoterapeuter som arbetar med psykologisk
@@ -33,9 +36,12 @@ function Footer() {
                 </p>
               </div>
             </div>
+            {/* Resterande kod oförändrad */}
             <div className="footer--title services-title">
               <div className="services-container">
-                <h4 className="services-header">Tjänster</h4>
+                <span style={{ fontWeight: "bold", fontSize: "18px" }}>
+                  Tjänster
+                </span>{" "}
                 <a href="/services" className="footer--link service-link">
                   ADHD-utredning
                 </a>
@@ -52,11 +58,23 @@ function Footer() {
             </div>
             <div className="footer--title contact-title">
               <div className="contact-container">
-                <h4 className="contact-header">Kontakta oss</h4>
-                <h4 className="contact-phone">Telefonnummer: 08-123123123</h4>
-                <h4 className="contact-email">E-post: tjock@hotmail.com </h4>
-                <h4 className="contact-address">
-                  Huvudkontor: Östermalmstorg 14
+                <h4
+                  className="contact-header"
+                  style={{ fontWeight: "bold", fontSize: "18px" }}
+                >
+                  Kontakt
+                </h4>
+                <h4 className="contact-phone">
+                  <span style={{ fontWeight: "bold" }}>Telefonnummer:</span>{" "}
+                  08-123123123
+                </h4>
+                <h4 className="contact-email">
+                  <span style={{ fontWeight: "bold" }}>E-post:</span>{" "}
+                  Tjock@Hotmail.com
+                </h4>
+                <h4 className="contact-adress">
+                  <span style={{ fontWeight: "bold" }}>Huvudkontor:</span>{" "}
+                  TjockareblirdeinteGatan 215
                 </h4>
               </div>
             </div>

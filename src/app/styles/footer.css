@@ -15,14 +15,33 @@
   margin-right: 10%;
 }
 
+.contact-phone,
+.contact-email,
+.contact-adress {
+  margin-bottom: 15px; /* Adjust the spacing as needed */
+}
+
+hr {
+  width: 80%; /* Set the desired width (adjust as needed) */
+  margin: 0 auto; /* Center the <hr> element */
+  border: none; /* Remove default border */
+  height: 1px; /* Set height if needed */
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    transparent
+  ); /* Example background for gradient effect */
+}
+
 /* Titles Container */
 .footer--titles {
   display: flex; /* Use flexbox for horizontal layout */
   justify-content: space-between; /* Distribute space evenly */
-  gap: 40px; /* Add space between each section */
+  gap: 80px; /* Add space between each section */
   width: 100%; /* Ensure it takes full width */
   max-width: 1200px; /* Max width for larger screens */
-  margin: auto; /* Center the content */
+  margin: 50px 0px;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
@@ -40,30 +59,52 @@
 .contact-header {
   margin-bottom: 15px; /* Margin below headers */
 }
+.about-us-description {
+  margin-top: 10px; /* Adjust this value as needed for more or less spacing */
+}
 
 .services-container {
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack items vertically */
   margin-bottom: 40px; /* Space below the Services section */
-  margin-left: 20%; /* Left margin for larger screens */
+  padding-left: 115px; /* Add padding to the left */
+}
+
+/* Container for Contact */
+.contact-container {
+  margin-bottom: 40px; /* Space below the Contact section */
+  margin-right: 10%; /* Adjust if necessary */
+  padding-left: 20px; /* Add padding to the left */
+}
+
+.about-us-container {
+  margin-bottom: 40px; /* Om det behövs mer utrymme under About Us sektionen */
+  margin-left: 10%; /* Justera om nödvändigt */
+}
+
+.footer--container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  padding: 15px; /* Add some padding for spacing */
+  gap: 0px;
+  /* You can add a background color or border here if needed */
+}
+
+.footer--section--button-link {
+  display: inline-block; /* Make the button behave like a block for better spacing */
+  font-size: 12px; /* Font size */
+  background-color: var(--white); /* Button background */
+  padding: 4px 8px; /* Padding inside the button */
+  color: var(--black); /* Text color */
+  border: 1px solid var(--black); /* Border */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .footer--button-container {
-  text-align: center; /* Center the button within the container */
-  margin: 20px 0; /* Space above and below the button */
-}
-
-.footer--button {
-  display: inline-block; /* Make the button behave like a block element */
-  padding: 10px 20px; /* Add padding inside the button */
-  font-size: 16px; /* Set the font size */
-  font-weight: bold; /* Make the text bold */
-  color: #fff; /* Text color */
-  background-color: #007bff; /* Background color (blue) */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline from link */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  position: relative; /* Relative positioning */
+  top: 20px; /* Adjust this value if you want to move the button up or down */
+  margin-bottom: 20px; /* Space below the button */
 }
 
 /* Hover effect for the button */
@@ -94,35 +135,101 @@
   width: 24px; /* Width for the SVG icons */
   height: 24px; /* Height for the SVG icons */
 }
-@media (max-width: 768px) {
-  /* Titles Container */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adjust the gap value for desired spacing */
+  margin-bottom: 40px;
+}
+
+.footer--link.service-link {
+  color: #808080; /* Set text color to gray */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Ensure each link is on its own line */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+  font-weight: bold;
+}
+
+/* Hover effect to change color to light gray */
+.footer--link.service-link:hover {
+  color: #4d4d4d; /* Set color to darker gray on hover */
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
   .footer--titles {
-    flex-direction: column; /* Stack titles vertically on small screens */
-    align-items: center; /* Center titles */
-    gap: 0px; /* Add space between titles */
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Adjust gap between sections */
   }
 
-  /* Each Title Style */
   .footer--title {
-    min-width: 100%; /* Allow titles to take full width */
-    text-align: center; /* Center align text */
+    margin: 10px 0; /* Space above and below titles */
   }
 
-  /* Adjust Margins for About Us and Contact */
   .about-us-container,
+  .services-container,
   .contact-container {
-    margin-left: 0; /* Remove left margin on smaller screens */
-    margin-right: 0; /* Remove right margin on smaller screens */
-    text-align: center; /* Center align text for these sections */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    padding: 0 10%; /* Add padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer--titles {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Adjust gap between sections */
   }
 
-  .services-container {
-    display: flex; /* Ensure it remains a flex container */
-    flex-direction: column; /* Stack items vertically */
-    margin-bottom: 40px; /* Space below the Services section */
-    margin-left: 0; /* Remove left margin on smaller screens */
+  .footer--title {
+    margin: 10px 0; /* Space above and below titles */
   }
-  .footer--link.service-link {
-    margin-bottom: 10px; /* Space below each service link */
+
+  .about-us-container,
+  .services-container,
+  .contact-container {
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    padding: 0 10%; /* Add padding for smaller screens */
   }
+}
+
+@media (max-width: 500px) {
+  .footer--titles {
+    gap: 15px; /* Further reduce gap for smaller screens */
+  }
+
+  .about-us-header,
+  .services-header,
+  .contact-header {
+    font-size: 15px; /* Further reduce header font size */
+  }
+
+  .about-us-description,
+  .contact-phone,
+  .contact-email,
+  .contact-adress {
+    font-size: 15px; /* Further reduce text font size */
+  }
+
+  .footer--button-container {
+    margin-bottom: 15px; /* Adjust space below button for small screens */
+  }
+}
+
+/* Additional styles for the button and links */
+.footer--link.service-link {
+  color: #808080; /* Set text color to gray */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Ensure each link is on its own line */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+  font-weight: bold;
+}
+
+/* Hover effect to change color to light gray */
+.footer--link.service-link:hover {
+  color: #4d4d4d; /* Set color to darker gray on hover */
 }

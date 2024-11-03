@@ -1,4 +1,7 @@
 /* Global CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   margin: 0;
@@ -28,7 +31,7 @@ p {
 .btn {
   font-family: "Roboto";
   display: inline-block;
-  padding: 12px 32px;
+  padding: 10px 32px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -60,7 +63,9 @@ p {
   color: var(--black);
   background-color: var(--primary);
   border: 1px solid var(--black);
+  font-size: 5px;
 }
+
 .btn-primary:hover {
   color: var(--bg-shade);
   background-color: grey;
