@@ -13,11 +13,7 @@ function Navbar() {
       <div className="navbar--container">
         {/* Title Above Navbar Items */}
         <div className="navbar--title-container">
-          <Link href="/" passHref className="navbar--link">
-            <h1 className="navbar--title" style={{ cursor: "pointer" }}>
-              Polas Hemsida
-            </h1>
-          </Link>
+          <h1 className="navbar--title">Polas Hemsida</h1> {/* Title Added */}
         </div>
 
         <div className="navbar--items">
