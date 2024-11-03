@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="hero--section--img">
         {/* Use Next.js Image component for optimization */}
         <Image
-          src="/heroSection.jpg"
+          src="/depression.jpg"
           alt="Hero Section"
           width={500}
           height={500} // You can adjust these values
