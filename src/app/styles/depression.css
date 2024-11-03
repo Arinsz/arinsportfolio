@@ -1,0 +1,131 @@
+/* Base styles for the section */
+.depression-hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: var(--bg-shade); /* Define this in your CSS variables */
+  color: var(--text-color); /* Define a text color variable */
+  gap: 20px;
+}
+
+.depression-hero-section-img {
+  width: 80%;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.depression-hero-section-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for content */
+.depression-hero-section-content-box {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Main section title */
+.depression-section-title,
+.depression-section-title2,
+.depression-section-title3,
+.depression-section-title4,
+.depression-section-title5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--heading-color); /* Primary heading color */
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  padding-bottom: 40px;
+}
+
+/* Descriptions */
+.depression-hero-section-description,
+.depression-hero-section-description1,
+.depression-hero-section-description2,
+.depression-hero-section-description3,
+.depression-hero-section-description4,
+.depression-hero-section-description5,
+.depression-hero-section-description6 {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-color);
+  text-align: justify;
+  max-width: 1300px;
+  padding: 0 0px;
+  padding-bottom: 60px;
+}
+
+/* Smaller screens (768px and below) */
+@media (max-width: 768px) {
+  .depression-hero-section {
+    padding: 60px 15px;
+  }
+
+  .depression-hero-section-img img {
+    border-radius: 10px;
+  }
+
+  .depression-hero-section-content-box {
+    gap: 20px;
+  }
+
+  .depression-section-title,
+  .depression-section-title2,
+  .depression-section-title3,
+  .depression-section-title4,
+  .depression-section-title5 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .depression-hero-section-description,
+  .depression-hero-section-description1,
+  .depression-hero-section-description2,
+  .depression-hero-section-description3,
+  .depression-hero-section-description4,
+  .depression-hero-section-description5,
+  .depression-hero-section-description6 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Very small screens (500px and below) */
+@media (max-width: 500px) {
+  .depression-hero-section {
+    padding: 40px 10px;
+  }
+
+  .depression-section-title,
+  .depression-section-title2,
+  .depression-section-title3,
+  .depression-section-title4,
+  .depression-section-title5 {
+    font-size: 1.25rem;
+  }
+
+  .depression-hero-section-description,
+  .depression-hero-section-description1,
+  .depression-hero-section-description2,
+  .depression-hero-section-description3,
+  .depression-hero-section-description4,
+  .depression-hero-section-description5,
+  .depression-hero-section-description6 {
+    font-size: 0.95rem;
+    padding: 0 5px;
+  }
+
+  .depression-hero-section-content-box {
+    gap: 15px;
+  }
+}

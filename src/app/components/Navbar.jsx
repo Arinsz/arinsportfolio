@@ -28,17 +28,17 @@ function Navbar() {
               <ul className="submenu">
                 <li>
                   <Link href="/" className="submenu--content">
-                    Hero Section
+                    INDIVIDUELL PSYKOTERAPI
                   </Link>
                 </li>
                 <li>
                   <Link href="/intro" className="submenu--content">
-                    Introduction Page
+                    TERAPI ONLINE
                   </Link>
                 </li>
                 <li>
                   <Link href="/features" className="submenu--content">
-                    Features
+                    BARNTERAPI
                   </Link>
                 </li>
               </ul>
@@ -46,21 +46,21 @@ function Navbar() {
 
             {/* Portfolio Dropdown */}
             <li className="dropdown">
-              <div className="navbar--content">METODER</div>
+              <div className="navbar--content">TERAPIFORMER</div>
               <ul className="submenu">
                 <li>
                   <Link href="/#MyPortfolio" className="submenu--content">
-                    My Works
+                    KBT – Kognitiv beteendeterapi
                   </Link>
                 </li>
                 <li>
                   <Link href="/projects" className="submenu--content">
-                    All Projects
+                    PDT - Psykodynamisk terapi
                   </Link>
                 </li>
                 <li>
                   <Link href="/portfolio/featured" className="submenu--content">
-                    Featured Projects
+                    MI - Motiverande samtal
                   </Link>
                 </li>
               </ul>
@@ -68,19 +68,16 @@ function Navbar() {
 
             {/* Services Dropdown */}
             <li className="dropdown">
-              <div className="navbar--content">FÖRELÄSNINGAR</div>
+              <div className="navbar--content">BEHANDLINGAR</div>
               <ul className="submenu">
                 <li>
-                  <Link
-                    href="/services/web-design"
-                    className="submenu--content"
-                  >
-                    Web Design
+                  <Link href="/pages/depression" className="submenu--content">
+                    Depression
                   </Link>
                 </li>
                 <li>
                   <Link href="/services/seo" className="submenu--content">
-                    SEO Optimization
+                    Ångest och oro
                   </Link>
                 </li>
                 <li>
@@ -88,7 +85,7 @@ function Navbar() {
                     href="/services/consulting"
                     className="submenu--content"
                   >
-                    Consulting
+                    Panikångest och agorafobi
                   </Link>
                 </li>
               </ul>
@@ -96,16 +93,36 @@ function Navbar() {
 
             {/* Blog Dropdown */}
             <li className="dropdown">
-              <div className="navbar--content">COACHING</div>
+              <div className="navbar--content">NPF-UTREDNINGAR</div>
               <ul className="submenu">
                 <li>
                   <Link href="/blog/latest" className="submenu--content">
-                    Latest Posts
+                    ADHD utredning för vuxen
                   </Link>
                 </li>
                 <li>
                   <Link href="/blog/popular" className="submenu--content">
-                    Popular Topics
+                    ADHD utredning för barn
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/popular" className="submenu--content">
+                    ADD utredning
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/popular" className="submenu--content">
+                    Autism utredning för vuxna
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/popular" className="submenu--content">
+                    Autism utredning för barn
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/popular" className="submenu--content">
+                    IF utredning
                   </Link>
                 </li>
               </ul>
