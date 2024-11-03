@@ -274,3 +274,75 @@
     font-size: 8px; /* Större textstorlek för bättre läsbarhet */
   }
 }
+@media (max-width: 375px) {
+  .navbar {
+    padding: 20px 80px; /* Mer padding på större skärmar */
+  }
+
+  .navbar--container {
+    flex-direction: row; /* Justera till horisontell layout */
+    align-items: center; /* Centrera vertikalt */
+  }
+
+  .navbar--title {
+    font-size: 10px; /* Större titelstorlek för bredare skärmar */
+    margin: 0 20px; /* Ökat horisontellt mellanrum */
+  }
+
+  .navbar--items > ul {
+    gap: 10px; /* Ökat avstånd mellan menyobjekt */
+  }
+
+  .navbar--content {
+    font-size: 5px; /* Ökad textstorlek för bättre läsbarhet */
+  }
+
+  .navbar--contact {
+    font-size: 18px; /* Justera kontaktknappens textstorlek */
+  }
+
+  .submenu {
+    min-width: 200px; /* Ökad bredd för större skärmar */
+    padding: 5px 0; /* Mer padding */
+  }
+
+  .submenu--content {
+    font-size: 8px; /* Större textstorlek för bättre läsbarhet */
+  }
+}
+@media (max-width: 450px) {
+  .navbar {
+    padding: 20px 80px; /* Mer padding på större skärmar */
+  }
+
+  .navbar--container {
+    flex-direction: row; /* Justera till horisontell layout */
+    align-items: center; /* Centrera vertikalt */
+  }
+
+  .navbar--title {
+    font-size: 15px; /* Större titelstorlek för bredare skärmar */
+    margin: 0 20px; /* Ökat horisontellt mellanrum */
+  }
+
+  .navbar--items > ul {
+    gap: 10px; /* Ökat avstånd mellan menyobjekt */
+  }
+
+  .navbar--content {
+    font-size: 7px; /* Ökad textstorlek för bättre läsbarhet */
+  }
+
+  .navbar--contact {
+    font-size: 18px; /* Justera kontaktknappens textstorlek */
+  }
+
+  .submenu {
+    min-width: 200px; /* Ökad bredd för större skärmar */
+    padding: 5px 0; /* Mer padding */
+  }
+
+  .submenu--content {
+    font-size: 8px; /* Större textstorlek för bättre läsbarhet */
+  }
+}
