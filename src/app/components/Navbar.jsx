@@ -136,21 +136,13 @@ function Navbar() {
               </ul>
             </li>
 
-            {/* Additional Dropdowns */}
-            <li className="dropdown">
-              <div className="navbar--content">OM OSS</div>
-              <ul className="submenu">
-                <li>
-                  <Link href="/blog/latest" className="submenu--content">
-                    Latest Posts
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog/popular" className="submenu--content">
-                    Popular Topics
-                  </Link>
-                </li>
-              </ul>
+            {/* Additional Link for OM OSS */}
+            <li>
+              <Link href="/about" className="navbar--content">
+                {" "}
+                {/* Länk till "OM OSS" */}
+                KONTAKT
+              </Link>
             </li>
           </ul>
         </div>

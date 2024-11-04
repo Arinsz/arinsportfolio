@@ -62,7 +62,7 @@
   text-align: justify;
   max-width: 1300px;
   padding: 0 0px;
-  padding-bottom: 60px;
+  padding-bottom: 60px 10px;
 }
 
 /* Smaller screens (768px and below) */
@@ -123,6 +123,7 @@
   .depression-hero-section-description6 {
     font-size: 0.95rem;
     padding: 0 5px;
+    padding-bottom: 30px;
   }
 
   .depression-hero-section-content-box {
